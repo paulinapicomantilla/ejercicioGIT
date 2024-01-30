@@ -1,0 +1,28 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Página Web</title>
+</head>
+<body>
+    <h1>Mi Página Web</h1>
+<script>
+        let inicio=["unacadena",3,9,1,10,500,1,10,true];
+        let inicioSoloNumeros=[];
+        for( let k=0; k<inicio.length; k++){
+            if(typeof inicio[k]==='number'){ //valido los elementos que sean numeros
+            inicioSoloNumeros.push(inicio[k]); //los pongo en otro arreglo
+            }
+        }
+
+        for (let i=0; i<inicioSoloNumeros.length; i++){
+            for(let j=0; j<inicioSoloNumeros.length; j++){
+                if(inicioSoloNumeros[i]<inicioSoloNumeros[j]){
+                    let temporal=inicioSoloNumeros[i];
+                    inicioSoloNumeros[i]=inicioSoloNumeros[j];
+                    inicioSoloNumeros[j]=temporal;
+                }
+        }
+        }
+        console.log(inicioSoloNumeros);
+</script>
+</body>
+</html>

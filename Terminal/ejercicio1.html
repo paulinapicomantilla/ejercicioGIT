@@ -1,0 +1,27 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Página Web</title>
+</head>
+<body>
+    <h1>Mi Página Web</h1>
+<script>
+    let numeroDeElementos=15;
+    let fibonacci=[0];
+    let suma=0;
+    let arregloTemporal=[];
+    let posicion=0;
+    for (let i=0; i<numeroDeElementos; i++){
+        arregloTemporal.push(0);
+    }
+    arregloTemporal[0]=1;
+    arregloTemporal[1]=1;
+    fibonacci[0]=1;
+    fibonacci[1]=1;
+    for (let j=2; j<arregloTemporal.length; j++){
+        arregloTemporal[j]= arregloTemporal[j-2]+arregloTemporal[j-1];
+        fibonacci.push(arregloTemporal[j]);
+    }
+    console.log(fibonacci);
+</script>
+</body>
+</html>
